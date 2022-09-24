@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="top">
+                <p class="wel">Welcome</p>
+                <p class="wel">Hello,</p>
+            </div>
+            <div class="quote">
+                <p>"Study as if you know nothing, Work as if you can solve anything."</p>
+            </div>
+            <div class="topics">
+                <a href="https://www.w3schools.com/java/" class="button">JAVA</a>
+                <a href="https://www.onlinegdb.com/" class="button">ONLINE GDB</a>
+                <a href="E:\webhtml" class="button">WEBHTML</a>
+                <a href="https://youtu.be/jS4aFq5-91M" class="button">JAVASCRIPT</a>
+                <a href="https://www.kct.ac.in/wp-content/uploads/2022/01/KCT_R18_CSE.pdf" class="button">SYLLABUS</a>
+                <a href="https://web.whatsapp.com/" class="button">Whatssapp Web</a>
+                <!-- <button formaction="https://www.w3docs.com">Data structures</button>
+                <button formaction="https://www.w3docs.com">javascript</button>
+                <button formaction="https://www.w3docs.com">webhtml</button>
+                <button formaction="https://www.w3docs.com">Syllabus</button> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    *{
+        margin:0;
+        padding:auto;
+    }
+    .outer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:94.8rem;
+        height:70rem;
+        background-color: black;
+    }
+    .inner{
+        display: flex;
+        flex-direction: column;
+        width:60%;
+        height:90%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .wel{
+  color:#D1B217;
+  font-size:7rem;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.quote{
+    color:#DDDDDB;
+    font-size:3rem;
+    font-family:cursive;
+}
+.topics{
+    display:flex;
+    flex-direction: column;
+    width:60%;
+    height:35%;;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D1B217;
+    background-color:#DDDDDB;
+    width:35%;
+    height:15%;
+    border-color:#DDDDDB;
+    font-size:1.1rem;
+    border-radius: 5rem;
+}
+.button:hover{
+    background-color: #D1B217;
+    color:#DDDDDB;
+    width:40%;
+    height:20%;
+    border-color: #D1B217;
+    font-size:1.1rem;
+    border-radius: 5rem;
+}
+</style>
